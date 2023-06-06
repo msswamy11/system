@@ -1,0 +1,19 @@
+Reference:
+
+NAND SPI ROM:
+
+NOR SPI ROM:
+  NOR SPI ROM has similar accessing mechanism as RAM.
+  Capability to execute code in place(XIP), without moving to RAM.
+
+Read operation:
+|<- 8 Clock cycles -> | <- 3 Byte address (24 clock cycles) -> | <- n bytes of data read (n*8) -> |
+8+24+n*8 = 32+n8 = 8(4+n)
+
+For SPI with 50MHZ - 1 clock cycle time 1/50MHZ = 20ns
+In 1 sec how many cycles it can complete = 1sec/20ns = 50000000 cycles
+32+8n = 50000000
+n = (50000000 - 32 ) / 8
+n = 6249996
+n = 6.25 M bits per second.
+
