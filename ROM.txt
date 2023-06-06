@@ -15,5 +15,5 @@ In 1 sec how many cycles it can complete = 1sec/20ns = 50000000 cycles
 32+8n = 50000000
 n = (50000000 - 32 ) / 8
 n = 6249996
-n = 6.25 M bits per second.
+n = 6.25 M byts per second.
 
