@@ -7,7 +7,7 @@ NOR SPI ROM:
   Capability to execute code in place(XIP), without moving to RAM.
 
 SPI ROM Read operation time calculation:
-|<- 8 Clock cycles -> | <- 3 Byte address (24 clock cycles) -> | <- n bytes of data read (n*8) -> |
+__| <- 8 Clock cycles -> | <- 3 Byte address (24 clock cycles) -> | <- n bytes of data read (n*8) -> |____
 8+24+n*8 = 32+n8 = 8(4+n)
 
 For SPI with 50MHZ - 1 clock cycle time 1/50MHZ = 20ns
