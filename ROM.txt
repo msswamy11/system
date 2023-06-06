@@ -6,7 +6,7 @@ NOR SPI ROM:
   NOR SPI ROM has similar accessing mechanism as RAM.
   Capability to execute code in place(XIP), without moving to RAM.
 
-Read operation:
+SPI ROM Read operation time calculation:
 |<- 8 Clock cycles -> | <- 3 Byte address (24 clock cycles) -> | <- n bytes of data read (n*8) -> |
 8+24+n*8 = 32+n8 = 8(4+n)
 
