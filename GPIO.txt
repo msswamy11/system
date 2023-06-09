@@ -2,6 +2,7 @@ Reference:
   https://www.youtube.com/watch?v=IjKDKGqCm_4
 
 GPIOs cacn be configured as input and ouput using configuration register. In general by default all GPIOs configured as input.
+
 Input mode:
   If left unconnected, act as floating hence high impedence mode. Power leakage from Vcc to GND and wastage of power.
 
